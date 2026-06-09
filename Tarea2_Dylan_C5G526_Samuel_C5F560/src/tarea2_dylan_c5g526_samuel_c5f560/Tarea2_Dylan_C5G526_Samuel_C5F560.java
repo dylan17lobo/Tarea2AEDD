@@ -33,9 +33,7 @@ public class Tarea2_Dylan_C5G526_Samuel_C5F560 {
         int opcion;
 
         do {
-            System.out.println("\n=========================================");
-            System.out.println("      MENU  TAREA 2: ORDENAMIENTO         ");
-            System.out.println("=========================================");
+            System.out.println("      MENU ORDENAMIENTO         ");
             System.out.println("1. Cargar archivo");
             System.out.println("2. Ordenar mediante Burbuja Mejorado");
             System.out.println("3. Ordenar mediante Insercion Directa");
@@ -212,12 +210,20 @@ public class Tarea2_Dylan_C5G526_Samuel_C5F560 {
     }
 
     private static void quicksort(Persona[] arr, int low, int high) {
-        if (low < high) {
-            int pi = partition(arr, low, high);
+    while (low < high) {
+        // Obtenemos el índice de la partición
+        int pi = partition(arr, low, high);
+
+        // Evaluamos cuál mitad es más pequeña para procesarla recursivamente primero
+        if (pi - low < high - pi) {
             quicksort(arr, low, pi - 1);
+            low = pi + 1; // El bucle se encarga de la mitad derecha (ahorramos una llamada a la pila)
+        } else {
             quicksort(arr, pi + 1, high);
+            high = pi - 1; // El bucle se encarga de la mitad izquierda
         }
     }
+}
 
     private static void buscarPersona(Scanner sc) {
         if (vectorOrdenado == null || vectorOrdenado.length == 0) {
