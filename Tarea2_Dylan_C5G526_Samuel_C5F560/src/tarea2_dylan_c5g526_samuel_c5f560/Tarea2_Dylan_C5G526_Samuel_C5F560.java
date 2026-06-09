@@ -34,7 +34,7 @@ public class Tarea2_Dylan_C5G526_Samuel_C5F560 {
 
         do {
             System.out.println("\n=========================================");
-            System.out.println("      MENÚ TAREA 2: ORDENAMIENTO         ");
+            System.out.println("      MENÚ  TAREA 2: ORDENAMIENTO         ");
             System.out.println("=========================================");
             System.out.println("1. Cargar archivo");
             System.out.println("2. Ordenar mediante Burbuja Mejorado");
