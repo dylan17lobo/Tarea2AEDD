@@ -34,7 +34,7 @@ public class Tarea2_Dylan_C5G526_Samuel_C5F560 {
 
         do {
             System.out.println("\n=========================================");
-            System.out.println("      MENÚ  TAREA 2: ORDENAMIENTO         ");
+            System.out.println("      MENU  TAREA 2: ORDENAMIENTO         ");
             System.out.println("=========================================");
             System.out.println("1. Cargar archivo");
             System.out.println("2. Ordenar mediante Burbuja Mejorado");
@@ -86,7 +86,7 @@ public class Tarea2_Dylan_C5G526_Samuel_C5F560 {
                     System.out.println("Saliendo de la aplicación...");
                     break;
                 default:
-                    System.out.println("Opción inválida. Intente de nuevo.");
+                    System.out.println("Opcion inválida. Intente de nuevo.");
             }
         } while (opcion != 10);
         sc.close();
@@ -227,7 +227,7 @@ public class Tarea2_Dylan_C5G526_Samuel_C5F560 {
 
         System.out.print("Ingrese la cédula a buscar: ");
         while (!sc.hasNextInt()) {
-            System.out.print("Por favor, ingrese un número válido: ");
+            System.out.print("Por favor, ingrese un número valido: ");
             sc.next();
         }
         int cedula = sc.nextInt();
