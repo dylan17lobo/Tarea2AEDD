@@ -38,18 +38,18 @@ public class Tarea2_Dylan_C5G526_Samuel_C5F560 {
             System.out.println("=========================================");
             System.out.println("1. Cargar archivo");
             System.out.println("2. Ordenar mediante Burbuja Mejorado");
-            System.out.println("3. Ordenar mediante Inserción Directa");
-            System.out.println("4. Ordenar mediante Selección");
+            System.out.println("3. Ordenar mediante Insercion Directa");
+            System.out.println("4. Ordenar mediante Seleccion");
             System.out.println("5. Ordenar mediante Quicksort");
             System.out.println("6. Ordenar mediante Mergesort");
             System.out.println("7. Ordenar mediante Shellsort");
             System.out.println("8. Buscar en el vector ordenado (Binaria)");
             System.out.println("9. Imprimir vector ordenado");
             System.out.println("10. Salir");
-            System.out.print("Seleccione una opción: ");
+            System.out.print("Seleccione una opcion: ");
 
             while (!sc.hasNextInt()) {
-                System.out.print("Por favor, ingrese un número válido: ");
+                System.out.print("Por favor, ingrese un número valido: ");
                 sc.next();
             }
             opcion = sc.nextInt();
@@ -65,7 +65,7 @@ public class Tarea2_Dylan_C5G526_Samuel_C5F560 {
                     ejecutarOrdenamiento("Inserción Directa");
                     break;
                 case 4:
-                    ejecutarOrdenamiento("Selección");
+                    ejecutarOrdenamiento("Seleccion");
                     break;
                 case 5:
                     ejecutarOrdenamiento("Quicksort");
@@ -113,7 +113,7 @@ public class Tarea2_Dylan_C5G526_Samuel_C5F560 {
                         listaOriginal.add(new Persona(cedula, nombre, edad));
                     }
                 }
-                System.out.println("¡Éxito! Se cargaron " + listaOriginal.size() + " personas.");
+                System.out.println("¡Exito! Se cargaron " + listaOriginal.size() + " personas.");
             } catch (Exception e) {
                 System.out.println("Error al procesar el archivo: " + e.getMessage());
             }
